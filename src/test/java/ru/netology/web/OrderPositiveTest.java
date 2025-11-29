@@ -46,13 +46,13 @@ public class OrderPositiveTest {
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
     }
 
-//    @Test
-//    void shouldBeSuccessOrderWithBugInFieldName() {
-//        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Артём");
-//        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79001234567");
-//        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
-//        driver.findElement(By.tagName("button")).click();
-//        String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
-//        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
-//    }
+    @Test
+    void shouldBeSuccessOrderWithBugInFieldName() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Артём");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79001234567");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.tagName("button")).click();
+        String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
+    }
 }
