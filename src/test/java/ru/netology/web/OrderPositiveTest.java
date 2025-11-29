@@ -47,7 +47,7 @@ public class OrderPositiveTest {
     }
 
     @Test
-    void shouldBeSuccessOrderWithBugInFieldName() {
+    void shouldBeSuccessOrderWithSpecialSymbol_ё() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Артём");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79001234567");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
