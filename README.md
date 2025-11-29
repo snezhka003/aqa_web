@@ -1,3 +1,5 @@
+[![Java CI with Gradle](https://github.com/snezhka003/aqa_web/actions/workflows/gradle.yml/badge.svg)](https://github.com/snezhka003/aqa_web/actions/workflows/gradle.yml)
+
 ## Задача №1: заказ карты
 
 Вам необходимо автоматизировать тестирование формы заказа карты:
